@@ -1,0 +1,56 @@
+{
+ "hbn_volumes": 3723,
+ "with_age_and_dx": 3205,
+ "excluded_incomplete_eval": 159,
+ "eligible": 3046,
+ "excluded_incomplete_fov": 101,
+ "excluded_gross_volume_outlier": 159,
+ "HBN_analysed": 2786,
+ "HBN_TC": 262,
+ "HBN_TC_train": 131,
+ "HBN_TC_test": 131,
+ "HBN_TC_by_site": {
+  "HBN-RU": 108,
+  "HBN-CBIC": 74,
+  "HBN-SI": 60,
+  "HBN-CUNY": 20
+ },
+ "HBN_TC_sex": {
+  "M": 147,
+  "F": 115
+ },
+ "HBN_TC_per_2y_bin": {
+  "[5.0, 7.0)": 52,
+  "[7.0, 9.0)": 68,
+  "[9.0, 11.0)": 58,
+  "[11.0, 13.0)": 35,
+  "[13.0, 15.0)": 25,
+  "[15.0, 17.0)": 15,
+  "[17.0, 19.0)": 5,
+  "[19.0, 21.01)": 4
+ },
+ "HBN_flags": {
+  "dx_asd": 394,
+  "dx_adhd": 1611,
+  "dx_anx": 996,
+  "dx_ld": 742,
+  "dx_dep": 299
+ },
+ "HBN_any_dx_none_of_flags": 232,
+ "ABIDE_rows": 1602,
+ "joint_TC": 1106,
+ "joint_TC_per_2y_bin": {
+  "[5.0, 7.0)": 61,
+  "[7.0, 9.0)": 179,
+  "[9.0, 11.0)": 287,
+  "[11.0, 13.0)": 220,
+  "[13.0, 15.0)": 145,
+  "[15.0, 17.0)": 92,
+  "[17.0, 19.0)": 62,
+  "[19.0, 21.01)": 60
+ },
+ "n_sites_joint": 42,
+ "generated": "2026-11-12T15:06:26",
+ "script": "scripts/A12_prepare_joint_input.py",
+ "output": "data/interim/A_joint_norm_input_20261112.csv"
+}

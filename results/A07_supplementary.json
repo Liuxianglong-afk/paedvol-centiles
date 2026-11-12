@@ -1,0 +1,121 @@
+{
+  "generated": "2026-11-04T15:49:16",
+  "script": "scripts/A07_raw_vs_z_algorithms_age_calibration.py",
+  "status": "post hoc / exploratory (2026-11-04)",
+  "n": {
+    "ASD": 647,
+    "TC": 394,
+    "institutions": 17
+  },
+  "same_setting_as_A03": {
+    "z": {
+      "auc": 0.591,
+      "auc_95ci": [
+        0.557,
+        0.626
+      ],
+      "brier": 0.2315,
+      "calibration_intercept": -0.01,
+      "calibration_slope": 0.696,
+      "per_institution_auc_median": 0.614
+    },
+    "raw": {
+      "auc": 0.622,
+      "auc_95ci": [
+        0.587,
+        0.656
+      ],
+      "brier": 0.2289,
+      "calibration_intercept": -0.06,
+      "calibration_slope": 0.598,
+      "per_institution_auc_median": 0.621
+    },
+    "raw_site": {
+      "auc": 0.606,
+      "auc_95ci": [
+        0.572,
+        0.641
+      ],
+      "brier": 0.2293,
+      "calibration_intercept": -0.009,
+      "calibration_slope": 0.736,
+      "per_institution_auc_median": 0.601
+    }
+  },
+  "self_check_z_auc_equals_A03": 0.591,
+  "delong_z_minus_raw": {
+    "diff": -0.0305,
+    "ci95": [
+      -0.0562,
+      -0.0049
+    ],
+    "p": 0.019591151871565668
+  },
+  "delong_z_minus_raw_site": {
+    "diff": -0.0149,
+    "ci95": [
+      -0.0285,
+      -0.0014
+    ],
+    "p": 0.030735619281034368
+  },
+  "algorithm_search": {
+    "n_configs": 39,
+    "configs_auc_direct_top10": {
+      "raw|lr_l2_C0.01": 0.6265779584023098,
+      "raw|lr_l2_C1.0": 0.6226747424662048,
+      "raw_site|lr_l2_C0.01": 0.6217921056967339,
+      "raw|lr_l2_C0.1": 0.6213252889164359,
+      "raw|lr_l1_C1.0": 0.6204053852611429,
+      "z|lr_l2_C0.01": 0.6174338414705905,
+      "raw_site|lr_l2_C0.1": 0.6087290815085635,
+      "z|lr_l1_C0.1": 0.6069441938191888,
+      "z|lr_l2_C0.1": 0.605106347923646,
+      "raw_site|lr_l1_C1.0": 0.6020445790411034
+    },
+    "best_direct": {
+      "config": "raw|lr_l2_C0.01",
+      "auc": 0.6266
+    },
+    "nested": {
+      "auc": 0.6184,
+      "auc_95ci": [
+        0.5835,
+        0.6532
+      ],
+      "chosen_counts": {
+        "raw|lr_l2_C0.01": 12,
+        "raw|lr_l2_C0.1": 4,
+        "z|hgb_lr0.03": 1
+      }
+    },
+    "note": "OOF scores are ranked within each held-out institution before pooling; direct = best combination chosen on all outer results (optimistic)"
+  },
+  "age_by_site_interaction": {
+    "n_regions": 92,
+    "n_fdr_sig": 2,
+    "delta_r2_median_iqr": [
+      0.028814370897640607,
+      0.02466713522581973,
+      0.03475064355309729
+    ],
+    "sites_with_ge10_controls": 24
+  },
+  "local_controls_age_spread": {
+    "n_sites": 17,
+    "abs_bias_mean": {
+      "random10": 0.2884,
+      "youngest10": 0.2706
+    },
+    "cov90_mean": {
+      "random10": 0.9133,
+      "youngest10": 0.9076
+    },
+    "age_gap_mean": {
+      "random10": 0.01,
+      "youngest10": 3.56
+    },
+    "youngest_minus_random_abs_bias_median": -0.03613697179558287,
+    "sites_youngest_worse": 4
+  }
+}

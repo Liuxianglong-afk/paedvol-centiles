@@ -1,0 +1,281 @@
+{
+ "generated": "2026-11-12T15:47:51",
+ "script": "scripts/A15_joint_interpretation.py",
+ "abide_asd": {
+  "n_ASD": 664,
+  "n_TC_test": 397,
+  "excluded_sites": [
+   {
+    "site": "ABIDEII-BNI_1",
+    "n_train_tc": 4,
+    "n": 15
+   },
+   {
+    "site": "ABIDEII-IU_1",
+    "n_train_tc": 2,
+    "n": 9
+   },
+   {
+    "site": "ABIDEII-KUL_3",
+    "n_train_tc": 0,
+    "n": 11
+   },
+   {
+    "site": "ABIDEII-NYU_2",
+    "n_train_tc": 0,
+    "n": 26
+   },
+   {
+    "site": "ABIDEII-ONRC_2",
+    "n_train_tc": 1,
+    "n": 2
+   },
+   {
+    "site": "ABIDEII-USM_1",
+    "n_train_tc": 3,
+    "n": 18
+   },
+   {
+    "site": "CMU_a",
+    "n_train_tc": 1,
+    "n": 3
+   },
+   {
+    "site": "CMU_b",
+    "n_train_tc": 1,
+    "n": 5
+   },
+   {
+    "site": "Caltech",
+    "n_train_tc": 3,
+    "n": 13
+   },
+   {
+    "site": "Leuven_1",
+    "n_train_tc": 2,
+    "n": 11
+   },
+   {
+    "site": "MaxMun_a",
+    "n_train_tc": 1,
+    "n": 2
+   },
+   {
+    "site": "MaxMun_c",
+    "n_train_tc": 0,
+    "n": 1
+   },
+   {
+    "site": "MaxMun_d",
+    "n_train_tc": 3,
+    "n": 14
+   },
+   {
+    "site": "SBL",
+    "n_train_tc": 1,
+    "n": 1
+   }
+  ],
+  "IRR": 1.225,
+  "IRR_95ci": [
+   1.069,
+   1.405
+  ],
+  "p": 0.003567272991245906,
+  "n_fdr_sig": 3,
+  "fdr_sig": [
+   {
+    "region": "V_3rd_Ventricle",
+    "cohen_d": 0.2896,
+    "p_fdr": 0.0032
+   },
+   {
+    "region": "G_LateralVentricles",
+    "cohen_d": 0.2256,
+    "p_fdr": 0.0125
+   },
+   {
+    "region": "C_lh_entorhinal",
+    "cohen_d": -0.2216,
+    "p_fdr": 0.0389
+   }
+  ],
+  "max_abs_d": 0.29,
+  "max_pct_extreme_any_region": 13.554
+ },
+ "control_burden_reference": {
+  "n": 528,
+  "by_db_n": {
+   "ABIDE": 397,
+   "HBN": 131
+  },
+  "median_iqr": [
+   4.0,
+   2.0,
+   8.0
+  ],
+  "P90": 16.0,
+  "P95": 23.0,
+  "P99": 38.73,
+  "any_extreme_pct": 90.152,
+  "by_db": {
+   "ABIDE": {
+    "median": 4.0,
+    "P95": 23.0,
+    "any_extreme_pct": 90.428
+   },
+   "HBN": {
+    "median": 3.0,
+    "P95": 20.0,
+    "any_extreme_pct": 89.313
+   }
+  },
+  "by_age_band": {
+   "5-9": {
+    "n": 124,
+    "median": 3.0,
+    "P95": 23.0
+   },
+   "9-13": {
+    "n": 239,
+    "median": 4.0,
+    "P95": 20.0
+   },
+   "13-21": {
+    "n": 165,
+    "median": 6.0,
+    "P95": 25.4
+   }
+  },
+  "expected_any_if_independent_pct": 99.108
+ },
+ "groups_vs_control_P95": {
+  "Controls (ABIDE)": {
+   "n": 397,
+   "median": 4.0,
+   "q1": 2.0,
+   "q3": 9.0,
+   "any_extreme_pct": 90.428,
+   "above_P95_pct": 4.282
+  },
+  "ASD (ABIDE)": {
+   "n": 664,
+   "median": 5.0,
+   "q1": 2.0,
+   "q3": 10.0,
+   "any_extreme_pct": 92.169,
+   "above_P95_pct": 7.831
+  },
+  "Controls (HBN)": {
+   "n": 131,
+   "median": 3.0,
+   "q1": 1.0,
+   "q3": 7.0,
+   "any_extreme_pct": 89.313,
+   "above_P95_pct": 3.817
+  },
+  "ASD (HBN)": {
+   "n": 394,
+   "median": 5.0,
+   "q1": 2.0,
+   "q3": 10.75,
+   "any_extreme_pct": 91.371,
+   "above_P95_pct": 9.137
+  },
+  "ADHD (HBN)": {
+   "n": 1611,
+   "median": 5.0,
+   "q1": 2.0,
+   "q3": 10.0,
+   "any_extreme_pct": 90.503,
+   "above_P95_pct": 9.249
+  },
+  "Anxiety (HBN)": {
+   "n": 996,
+   "median": 4.0,
+   "q1": 2.0,
+   "q3": 9.0,
+   "any_extreme_pct": 91.968,
+   "above_P95_pct": 8.333
+  },
+  "Specific learning disorder (HBN)": {
+   "n": 742,
+   "median": 5.0,
+   "q1": 2.0,
+   "q3": 10.0,
+   "any_extreme_pct": 91.509,
+   "above_P95_pct": 8.356
+  },
+  "Depression (HBN)": {
+   "n": 299,
+   "median": 4.0,
+   "q1": 2.0,
+   "q3": 8.0,
+   "any_extreme_pct": 91.639,
+   "above_P95_pct": 6.02
+  }
+ },
+ "effect_map_correlation": {
+  "ABIDE_ASD~HBN_ASD": {
+   "pearson": 0.512,
+   "spearman": 0.437
+  },
+  "HBN_ASD~HBN_ADHD": {
+   "pearson": 0.929,
+   "spearman": 0.902
+  },
+  "HBN_ASD~HBN_ADHD_noASD": {
+   "pearson": 0.898,
+   "spearman": 0.86
+  },
+  "HBN_ASD~HBN_ANX": {
+   "pearson": 0.866,
+   "spearman": 0.837
+  },
+  "HBN_ASD~HBN_SLD": {
+   "pearson": 0.887,
+   "spearman": 0.847
+  },
+  "HBN_ASD~HBN_DEP": {
+   "pearson": 0.792,
+   "spearman": 0.718
+  },
+  "HBN_ADHD~HBN_ANX": {
+   "pearson": 0.954,
+   "spearman": 0.946
+  },
+  "ABIDE_ASD~HBN_ADHD": {
+   "pearson": 0.456,
+   "spearman": 0.391
+  }
+ },
+ "asd_fdr_regions_shared_ABIDE_HBN": [
+  "V_3rd_Ventricle"
+ ],
+ "hbn_asd_fdr_sig": [
+  {
+   "region": "V_3rd_Ventricle",
+   "cohen_d": 0.5081,
+   "p_fdr": 0.003
+  },
+  {
+   "region": "C_rh_caudalmiddlefrontal",
+   "cohen_d": -0.3037,
+   "p_fdr": 0.0384
+  }
+ ],
+ "hbn_asd_vs_adhd_noASD": {
+  "n_ASD": 394,
+  "n_ADHD_noASD": 1317,
+  "burden_IRR": 1.096,
+  "burden_IRR_95ci": [
+   0.971,
+   1.237
+  ],
+  "burden_p": 0.13978309318258628,
+  "n_fdr_sig": 0,
+  "max_abs_d": 0.21,
+  "fdr_sig": []
+ },
+ "note_within_hbn_map_correlations": "inflated by shared HBN control group; descriptive only"
+}

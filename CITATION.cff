@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use these centiles or code, please cite them as below."
+title: "paedvol-centiles: paediatric brain volume centiles for FastSurfer with local site calibration"
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Liu
+    given-names: Xianglong
+    orcid: "https://orcid.org/0009-0001-7357-6233"
+    affiliation: "The Third Affiliated Hospital of Zhengzhou University"
+  - family-names: Zhao
+    given-names: Xin
+  - family-names: Jia
+    given-names: Xianglei
+  - family-names: Yang
+    given-names: Jinze
+  - family-names: Zhang
+    given-names: Xiaoan
+    orcid: "https://orcid.org/0000-0002-3156-0436"
+  - family-names: Wang
+    given-names: Xueyuan
+    orcid: "https://orcid.org/0000-0003-4233-7288"

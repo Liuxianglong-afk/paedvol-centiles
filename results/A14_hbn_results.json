@@ -1,0 +1,983 @@
+{
+ "generated": "2026-11-12T15:29:31",
+ "script": "scripts/A14_hbn_validation_and_dx.py",
+ "families": {
+  "BCCGo": 58,
+  "SHASHo": 20,
+  "BCTo": 14
+ },
+ "loso_joint": {
+  "pooled": {
+   "mean": -0.006,
+   "sd": 1.02,
+   "cov90": 0.896,
+   "cov95": 0.945,
+   "n_values": 101752
+  },
+  "by_db": {
+   "ABIDE": {
+    "mean": -0.013,
+    "sd": 1.025,
+    "cov90": 0.893,
+    "cov95": 0.943,
+    "n_values": 77648
+   },
+   "HBN": {
+    "mean": 0.017,
+    "sd": 1.002,
+    "cov90": 0.904,
+    "cov95": 0.95,
+    "n_values": 24104
+   }
+  },
+  "HBN_by_site": {
+   "HBN-CBIC": {
+    "mean": 0.258,
+    "sd": 1.029,
+    "cov90": 0.885,
+    "cov95": 0.939,
+    "n_values": 6808
+   },
+   "HBN-CUNY": {
+    "mean": -0.023,
+    "sd": 1.059,
+    "cov90": 0.891,
+    "cov95": 0.938,
+    "n_values": 1840
+   },
+   "HBN-RU": {
+    "mean": -0.082,
+    "sd": 0.901,
+    "cov90": 0.93,
+    "cov95": 0.967,
+    "n_values": 9936
+   },
+   "HBN-SI": {
+    "mean": -0.088,
+    "sd": 1.069,
+    "cov90": 0.883,
+    "cov95": 0.937,
+    "n_values": 5520
+   }
+  },
+  "by_age_band": {
+   "5-7": {
+    "mean": 0.02,
+    "sd": 0.939,
+    "cov90": 0.926,
+    "cov95": 0.965,
+    "n_values": 5612
+   },
+   "7-13": {
+    "mean": -0.011,
+    "sd": 1.023,
+    "cov90": 0.894,
+    "cov95": 0.943,
+    "n_values": 63112
+   },
+   "13-21": {
+    "mean": 0.001,
+    "sd": 1.026,
+    "cov90": 0.893,
+    "cov95": 0.944,
+    "n_values": 33028
+   }
+  },
+  "fallback_fits_pct": 0.0,
+  "regions_sd_within_0.9_1.1": 92
+ },
+ "cross_database": {
+  "ABIDE2HBN": {
+   "uncalibrated_all": {
+    "mean": 0.015,
+    "sd": 1.007,
+    "cov90": 0.902,
+    "cov95": 0.948,
+    "n_values": 24104
+   },
+   "uncalibrated_by_age_band": {
+    "5-7": {
+     "mean": 0.038,
+     "sd": 0.927,
+     "cov90": 0.93,
+     "cov95": 0.966,
+     "n_values": 4784
+    },
+    "7-13": {
+     "mean": -0.009,
+     "sd": 1.018,
+     "cov90": 0.899,
+     "cov95": 0.947,
+     "n_values": 14812
+    },
+    "13-21": {
+     "mean": 0.072,
+     "sd": 1.051,
+     "cov90": 0.884,
+     "cov95": 0.935,
+     "n_values": 4508
+    }
+   },
+   "locally_calibrated_test": {
+    "mean": -0.078,
+    "sd": 1.056,
+    "cov90": 0.887,
+    "cov95": 0.936,
+    "n_values": 12052
+   },
+   "n_subjects": 262
+  },
+  "HBN2ABIDE": {
+   "uncalibrated_all": {
+    "mean": -0.055,
+    "sd": 1.093,
+    "cov90": 0.874,
+    "cov95": 0.929,
+    "n_values": 59708
+   },
+   "uncalibrated_by_age_band": {
+    "7-13": {
+     "mean": -0.058,
+     "sd": 1.095,
+     "cov90": 0.874,
+     "cov95": 0.929,
+     "n_values": 48300
+    },
+    "13-21": {
+     "mean": -0.043,
+     "sd": 1.086,
+     "cov90": 0.871,
+     "cov95": 0.928,
+     "n_values": 11408
+    }
+   },
+   "locally_calibrated_test": {
+    "mean": 0.034,
+    "sd": 1.063,
+    "cov90": 0.886,
+    "cov95": 0.936,
+    "n_values": 27324
+   },
+   "n_subjects": 649
+  }
+ },
+ "adaptation_seed42": {
+  "k5_adapted": {
+   "abs_bias": 0.3751,
+   "sd": 0.9254,
+   "cov90": 0.8914,
+   "cov95": 0.9423
+  },
+  "k5_none": {
+   "abs_bias": 0.3596,
+   "sd": 0.9254,
+   "cov90": 0.8909,
+   "cov95": 0.941
+  },
+  "k5_shift_only": {
+   "abs_bias": 0.3751,
+   "sd": 0.9254,
+   "cov90": 0.8914,
+   "cov95": 0.9423
+  },
+  "k10_adapted": {
+   "abs_bias": 0.3647,
+   "sd": 1.0774,
+   "cov90": 0.8487,
+   "cov95": 0.9051
+  },
+  "k10_none": {
+   "abs_bias": 0.3695,
+   "sd": 0.9139,
+   "cov90": 0.8944,
+   "cov95": 0.943
+  },
+  "k10_shift_only": {
+   "abs_bias": 0.3097,
+   "sd": 0.9139,
+   "cov90": 0.9078,
+   "cov95": 0.953
+  },
+  "k20_adapted": {
+   "abs_bias": 0.2772,
+   "sd": 1.0256,
+   "cov90": 0.8764,
+   "cov95": 0.9287
+  },
+  "k20_none": {
+   "abs_bias": 0.3499,
+   "sd": 0.9215,
+   "cov90": 0.8951,
+   "cov95": 0.9445
+  },
+  "k20_shift_only": {
+   "abs_bias": 0.2475,
+   "sd": 0.9215,
+   "cov90": 0.9125,
+   "cov95": 0.9563
+  },
+  "k40_adapted": {
+   "abs_bias": 0.2082,
+   "sd": 1.0112,
+   "cov90": 0.8893,
+   "cov95": 0.9398
+  },
+  "k40_none": {
+   "abs_bias": 0.3312,
+   "sd": 0.9526,
+   "cov90": 0.8891,
+   "cov95": 0.9403
+  },
+  "k40_shift_only": {
+   "abs_bias": 0.1972,
+   "sd": 0.9526,
+   "cov90": 0.9089,
+   "cov95": 0.9549
+  }
+ },
+ "adaptation_n_sites": {
+  "5": 28,
+  "10": 26,
+  "20": 14,
+  "40": 8
+ },
+ "adaptation_HBN_sites_seed42": {
+  "k5_adapted": {
+   "abs_bias": 0.3784,
+   "sd": 0.9924,
+   "cov90": 0.8711
+  },
+  "k5_none": {
+   "abs_bias": 0.2181,
+   "sd": 0.9924,
+   "cov90": 0.897
+  },
+  "k5_shift_only": {
+   "abs_bias": 0.3784,
+   "sd": 0.9924,
+   "cov90": 0.8711
+  },
+  "k10_adapted": {
+   "abs_bias": 0.3316,
+   "sd": 1.0953,
+   "cov90": 0.8489
+  },
+  "k10_none": {
+   "abs_bias": 0.2316,
+   "sd": 0.9866,
+   "cov90": 0.8979
+  },
+  "k10_shift_only": {
+   "abs_bias": 0.3031,
+   "sd": 0.9866,
+   "cov90": 0.8873
+  },
+  "k20_adapted": {
+   "abs_bias": 0.2188,
+   "sd": 1.0487,
+   "cov90": 0.8752
+  },
+  "k20_none": {
+   "abs_bias": 0.2234,
+   "sd": 0.976,
+   "cov90": 0.8985
+  },
+  "k20_shift_only": {
+   "abs_bias": 0.2051,
+   "sd": 0.976,
+   "cov90": 0.9008
+  },
+  "k40_adapted": {
+   "abs_bias": 0.192,
+   "sd": 1.0157,
+   "cov90": 0.8899
+  },
+  "k40_none": {
+   "abs_bias": 0.2412,
+   "sd": 0.9715,
+   "cov90": 0.8987
+  },
+  "k40_shift_only": {
+   "abs_bias": 0.1855,
+   "sd": 0.9715,
+   "cov90": 0.9047
+  }
+ },
+ "adaptation_cov90_across_seeds": {
+  "k5_adapted": [
+   0.892,
+   0.0
+  ],
+  "k5_none": [
+   0.891,
+   0.0
+  ],
+  "k5_shift_only": [
+   0.892,
+   0.0
+  ],
+  "k10_adapted": [
+   0.849,
+   0.001
+  ],
+  "k10_none": [
+   0.895,
+   0.0
+  ],
+  "k10_shift_only": [
+   0.908,
+   0.0
+  ],
+  "k20_adapted": [
+   0.877,
+   0.001
+  ],
+  "k20_none": [
+   0.895,
+   0.0
+  ],
+  "k20_shift_only": [
+   0.913,
+   0.001
+  ],
+  "k40_adapted": [
+   0.89,
+   0.001
+  ],
+  "k40_none": [
+   0.889,
+   0.0
+  ],
+  "k40_shift_only": [
+   0.909,
+   0.001
+  ]
+ },
+ "hbn_dx": {
+  "n_TC_test": 131,
+  "n_DX": 2524,
+  "TC_burden_median_iqr": [
+   3.0,
+   1.0,
+   7.0
+  ],
+  "TC_any_extreme_pct": 89.313,
+  "groups": {
+   "ASD": {
+    "n": 394,
+    "burden_median_iqr": [
+     5.0,
+     2.0,
+     10.75
+    ],
+    "any_extreme_pct": 91.371,
+    "IRR": 1.546,
+    "IRR_95ci": [
+     1.232,
+     1.941
+    ],
+    "p": 0.00017425146846975083,
+    "regional_n_fdr_sig": 2,
+    "regional_top5": [
+     {
+      "region": "V_3rd_Ventricle",
+      "cohen_d": 0.5081,
+      "p_fdr": 0.003
+     },
+     {
+      "region": "C_rh_caudalmiddlefrontal",
+      "cohen_d": -0.3037,
+      "p_fdr": 0.0384
+     },
+     {
+      "region": "C_lh_rostralmiddlefrontal",
+      "cohen_d": -0.267,
+      "p_fdr": 0.0949
+     },
+     {
+      "region": "S_Right_Amygdala",
+      "cohen_d": -0.2567,
+      "p_fdr": 0.0953
+     },
+     {
+      "region": "C_lh_caudalmiddlefrontal",
+      "cohen_d": -0.3221,
+      "p_fdr": 0.1529
+     }
+    ],
+    "regional_abs_d_max": 0.508,
+    "p_fdr_across_5_dx": 0.0008712573423487541
+   },
+   "ADHD": {
+    "n": 1611,
+    "burden_median_iqr": [
+     5.0,
+     2.0,
+     10.0
+    ],
+    "any_extreme_pct": 90.503,
+    "IRR": 1.363,
+    "IRR_95ci": [
+     1.119,
+     1.659
+    ],
+    "p": 0.002038161658181067,
+    "regional_n_fdr_sig": 2,
+    "regional_top5": [
+     {
+      "region": "C_rh_caudalmiddlefrontal",
+      "cohen_d": -0.3512,
+      "p_fdr": 0.0122
+     },
+     {
+      "region": "V_3rd_Ventricle",
+      "cohen_d": 0.325,
+      "p_fdr": 0.0416
+     },
+     {
+      "region": "C_rh_caudalanteriorcingulate",
+      "cohen_d": -0.3168,
+      "p_fdr": 0.1782
+     },
+     {
+      "region": "C_lh_caudalmiddlefrontal",
+      "cohen_d": -0.3341,
+      "p_fdr": 0.1825
+     },
+     {
+      "region": "C_rh_entorhinal",
+      "cohen_d": -0.2747,
+      "p_fdr": 0.2417
+     }
+    ],
+    "regional_abs_d_max": 0.351,
+    "p_fdr_across_5_dx": 0.005095404145452668
+   },
+   "ANX": {
+    "n": 996,
+    "burden_median_iqr": [
+     4.0,
+     2.0,
+     9.0
+    ],
+    "any_extreme_pct": 91.968,
+    "IRR": 1.21,
+    "IRR_95ci": [
+     0.987,
+     1.485
+    ],
+    "p": 0.0667947139575412,
+    "regional_n_fdr_sig": 0,
+    "regional_top5": [
+     {
+      "region": "C_rh_caudalmiddlefrontal",
+      "cohen_d": -0.2724,
+      "p_fdr": 0.0814
+     },
+     {
+      "region": "V_3rd_Ventricle",
+      "cohen_d": 0.3463,
+      "p_fdr": 0.0814
+     },
+     {
+      "region": "C_lh_caudalmiddlefrontal",
+      "cohen_d": -0.2753,
+      "p_fdr": 0.8708
+     },
+     {
+      "region": "C_lh_isthmuscingulate",
+      "cohen_d": 0.1988,
+      "p_fdr": 0.8708
+     },
+     {
+      "region": "G_LateralVentricles",
+      "cohen_d": 0.2195,
+      "p_fdr": 0.8708
+     }
+    ],
+    "regional_abs_d_max": 0.346,
+    "p_fdr_across_5_dx": 0.0834933924469265
+   },
+   "SLD": {
+    "n": 742,
+    "burden_median_iqr": [
+     5.0,
+     2.0,
+     10.0
+    ],
+    "any_extreme_pct": 91.509,
+    "IRR": 1.253,
+    "IRR_95ci": [
+     1.016,
+     1.545
+    ],
+    "p": 0.03523730301068243,
+    "regional_n_fdr_sig": 1,
+    "regional_top5": [
+     {
+      "region": "C_rh_caudalmiddlefrontal",
+      "cohen_d": -0.3492,
+      "p_fdr": 0.0252
+     },
+     {
+      "region": "V_3rd_Ventricle",
+      "cohen_d": 0.3022,
+      "p_fdr": 0.1239
+     },
+     {
+      "region": "C_lh_precentral",
+      "cohen_d": -0.325,
+      "p_fdr": 0.1239
+     },
+     {
+      "region": "C_rh_caudalanteriorcingulate",
+      "cohen_d": -0.3819,
+      "p_fdr": 0.1239
+     },
+     {
+      "region": "C_lh_postcentral",
+      "cohen_d": -0.2895,
+      "p_fdr": 0.1945
+     }
+    ],
+    "regional_abs_d_max": 0.382,
+    "p_fdr_across_5_dx": 0.05872883835113739
+   },
+   "DEP": {
+    "n": 299,
+    "burden_median_iqr": [
+     4.0,
+     2.0,
+     8.0
+    ],
+    "any_extreme_pct": 91.639,
+    "IRR": 1.118,
+    "IRR_95ci": [
+     0.865,
+     1.444
+    ],
+    "p": 0.393980843418264,
+    "regional_n_fdr_sig": 0,
+    "regional_top5": [
+     {
+      "region": "C_rh_caudalmiddlefrontal",
+      "cohen_d": -0.2958,
+      "p_fdr": 0.2696
+     },
+     {
+      "region": "S_Right_Amygdala",
+      "cohen_d": -0.2157,
+      "p_fdr": 0.3402
+     },
+     {
+      "region": "C_lh_paracentral",
+      "cohen_d": -0.35,
+      "p_fdr": 0.3402
+     },
+     {
+      "region": "C_rh_parsopercularis",
+      "cohen_d": -0.1019,
+      "p_fdr": 0.3402
+     },
+     {
+      "region": "V_3rd_Ventricle",
+      "cohen_d": 0.372,
+      "p_fdr": 0.3402
+     }
+    ],
+    "regional_abs_d_max": 0.372,
+    "p_fdr_across_5_dx": 0.393980843418264
+   },
+   "ADHD_noASD": {
+    "n": 1317,
+    "burden_median_iqr": [
+     4.0,
+     2.0,
+     10.0
+    ],
+    "any_extreme_pct": 90.281,
+    "IRR": 1.329,
+    "IRR_95ci": [
+     1.09,
+     1.621
+    ],
+    "p": 0.004959927556783746,
+    "regional_n_fdr_sig": 1,
+    "regional_top5": [
+     {
+      "region": "C_rh_caudalmiddlefrontal",
+      "cohen_d": -0.3553,
+      "p_fdr": 0.0126
+     },
+     {
+      "region": "V_3rd_Ventricle",
+      "cohen_d": 0.296,
+      "p_fdr": 0.1087
+     },
+     {
+      "region": "C_rh_caudalanteriorcingulate",
+      "cohen_d": -0.3265,
+      "p_fdr": 0.1439
+     },
+     {
+      "region": "C_lh_caudalmiddlefrontal",
+      "cohen_d": -0.3268,
+      "p_fdr": 0.1937
+     },
+     {
+      "region": "C_rh_entorhinal",
+      "cohen_d": -0.2843,
+      "p_fdr": 0.1937
+     }
+    ],
+    "regional_abs_d_max": 0.355
+   },
+   "ASD_noADHD": {
+    "n": 100,
+    "burden_median_iqr": [
+     5.0,
+     2.0,
+     10.0
+    ],
+    "any_extreme_pct": 91.0,
+    "IRR": 1.353,
+    "IRR_95ci": [
+     1.006,
+     1.821
+    ],
+    "p": 0.045477322900236254
+   },
+   "ANY_DX": {
+    "n": 2524,
+    "burden_median_iqr": [
+     5.0,
+     2.0,
+     10.0
+    ],
+    "any_extreme_pct": 91.125,
+    "IRR": 1.344,
+    "IRR_95ci": [
+     1.108,
+     1.63
+    ],
+    "p": 0.002648236166225248
+   }
+  },
+  "discrimination": {
+   "ASD": {
+    "auc": 0.642,
+    "auc_95ci": [
+     0.587,
+     0.698
+    ],
+    "brier": 0.1783,
+    "calibration_intercept": 0.044,
+    "calibration_slope": 0.842,
+    "per_institution_auc": {
+     "HBN-CBIC": 0.683,
+     "HBN-CUNY": 0.673,
+     "HBN-RU": 0.696,
+     "HBN-SI": 0.56
+    },
+    "per_institution_auc_median": 0.678,
+    "burden_only_auc": [
+     0.587,
+     0.532,
+     0.642
+    ],
+    "baseline_age_sex_auc": [
+     0.446,
+     0.385,
+     0.508
+    ],
+    "z_only_auc": [
+     0.584,
+     0.526,
+     0.642
+    ],
+    "age_case_vs_tc_median": [
+     9.967,
+     9.463
+    ]
+   },
+   "ADHD": {
+    "auc": 0.471,
+    "auc_95ci": [
+     0.418,
+     0.524
+    ],
+    "brier": 0.0707,
+    "calibration_intercept": 0.069,
+    "calibration_slope": -0.397,
+    "per_institution_auc": {
+     "HBN-CBIC": 0.575,
+     "HBN-CUNY": 0.644,
+     "HBN-RU": 0.564,
+     "HBN-SI": 0.469
+    },
+    "per_institution_auc_median": 0.569,
+    "burden_only_auc": [
+     0.574,
+     0.525,
+     0.623
+    ],
+    "baseline_age_sex_auc": [
+     0.388,
+     0.334,
+     0.442
+    ],
+    "z_only_auc": [
+     0.448,
+     0.394,
+     0.502
+    ],
+    "age_case_vs_tc_median": [
+     9.668,
+     9.463
+    ]
+   },
+   "ANX": {
+    "auc": 0.505,
+    "auc_95ci": [
+     0.445,
+     0.565
+    ],
+    "brier": 0.105,
+    "calibration_intercept": 0.16,
+    "calibration_slope": -0.266,
+    "per_institution_auc": {
+     "HBN-CBIC": 0.556,
+     "HBN-CUNY": 0.685,
+     "HBN-RU": 0.634,
+     "HBN-SI": 0.496
+    },
+    "per_institution_auc_median": 0.595,
+    "burden_only_auc": [
+     0.572,
+     0.52,
+     0.624
+    ],
+    "baseline_age_sex_auc": [
+     0.421,
+     0.368,
+     0.474
+    ],
+    "z_only_auc": [
+     0.481,
+     0.422,
+     0.54
+    ],
+    "age_case_vs_tc_median": [
+     10.438,
+     9.463
+    ]
+   },
+   "SLD": {
+    "auc": 0.519,
+    "auc_95ci": [
+     0.469,
+     0.569
+    ],
+    "brier": 0.1417,
+    "calibration_intercept": 0.031,
+    "calibration_slope": 0.155,
+    "per_institution_auc": {
+     "HBN-CBIC": 0.612,
+     "HBN-CUNY": 0.582,
+     "HBN-RU": 0.567,
+     "HBN-SI": 0.429
+    },
+    "per_institution_auc_median": 0.575,
+    "burden_only_auc": [
+     0.582,
+     0.53,
+     0.635
+    ],
+    "baseline_age_sex_auc": [
+     0.315,
+     0.267,
+     0.362
+    ],
+    "z_only_auc": [
+     0.526,
+     0.476,
+     0.575
+    ],
+    "age_case_vs_tc_median": [
+     9.642,
+     9.463
+    ]
+   },
+   "DEP": {
+    "auc": 0.673,
+    "auc_95ci": [
+     0.615,
+     0.731
+    ],
+    "brier": 0.1993,
+    "calibration_intercept": 0.01,
+    "calibration_slope": 0.453,
+    "per_institution_auc": {
+     "HBN-CBIC": 0.715,
+     "HBN-CUNY": 0.769,
+     "HBN-RU": 0.707,
+     "HBN-SI": 0.577
+    },
+    "per_institution_auc_median": 0.711,
+    "burden_only_auc": [
+     0.554,
+     0.493,
+     0.614
+    ],
+    "baseline_age_sex_auc": [
+     0.763,
+     0.713,
+     0.813
+    ],
+    "z_only_auc": [
+     0.523,
+     0.459,
+     0.586
+    ],
+    "age_case_vs_tc_median": [
+     14.101,
+     9.463
+    ]
+   },
+   "ADHD_noASD": {
+    "auc": 0.424,
+    "auc_95ci": [
+     0.369,
+     0.479
+    ],
+    "brier": 0.0839,
+    "calibration_intercept": 0.084,
+    "calibration_slope": -1.125,
+    "per_institution_auc": {
+     "HBN-CBIC": 0.571,
+     "HBN-CUNY": 0.547,
+     "HBN-RU": 0.557,
+     "HBN-SI": 0.484
+    },
+    "per_institution_auc_median": 0.552,
+    "burden_only_auc": [
+     0.571,
+     0.522,
+     0.62
+    ],
+    "baseline_age_sex_auc": [
+     0.396,
+     0.342,
+     0.45
+    ],
+    "z_only_auc": [
+     0.439,
+     0.385,
+     0.493
+    ],
+    "age_case_vs_tc_median": [
+     9.584,
+     9.463
+    ]
+   }
+  },
+  "scale_associations": [
+   {
+    "scale": "SRS",
+    "n": 2546,
+    "IRR_per_SD": 1.073,
+    "IRR_95ci": [
+     1.029,
+     1.119
+    ],
+    "p": 0.0009530145354153387,
+    "spearman_rho": 0.042,
+    "p_fdr": 0.0038120581416613546
+   },
+   {
+    "scale": "SCQ",
+    "n": 2634,
+    "IRR_per_SD": 1.062,
+    "IRR_95ci": [
+     1.018,
+     1.107
+    ],
+    "p": 0.005097186132291434,
+    "spearman_rho": -0.012,
+    "p_fdr": 0.012319132564275196
+   },
+   {
+    "scale": "SWAN",
+    "n": 2596,
+    "IRR_per_SD": 1.093,
+    "IRR_95ci": [
+     1.047,
+     1.141
+    ],
+    "p": 4.376934269818063e-05,
+    "spearman_rho": 0.047,
+    "p_fdr": 0.00035015474158544505
+   },
+   {
+    "scale": "SCARED_P",
+    "n": 2497,
+    "IRR_per_SD": 0.972,
+    "IRR_95ci": [
+     0.932,
+     1.014
+    ],
+    "p": 0.18595650450404433,
+    "spearman_rho": -0.004,
+    "p_fdr": 0.24794200600539243
+   },
+   {
+    "scale": "MFQ_P",
+    "n": 2385,
+    "IRR_per_SD": 1.011,
+    "IRR_95ci": [
+     0.968,
+     1.055
+    ],
+    "p": 0.628311627368173,
+    "spearman_rho": -0.005,
+    "p_fdr": 0.718070431277912
+   },
+   {
+    "scale": "CBCL_Total_T",
+    "n": 2542,
+    "IRR_per_SD": 1.06,
+    "IRR_95ci": [
+     1.017,
+     1.105
+    ],
+    "p": 0.006159566282137598,
+    "spearman_rho": 0.009,
+    "p_fdr": 0.012319132564275196
+   },
+   {
+    "scale": "CBCL_Int_T",
+    "n": 2542,
+    "IRR_per_SD": 1.004,
+    "IRR_95ci": [
+     0.963,
+     1.047
+    ],
+    "p": 0.8420806260037799,
+    "spearman_rho": -0.016,
+    "p_fdr": 0.8420806260037799
+   },
+   {
+    "scale": "CBCL_Ext_T",
+    "n": 2542,
+    "IRR_per_SD": 1.036,
+    "IRR_95ci": [
+     0.994,
+     1.081
+    ],
+    "p": 0.09484312807320391,
+    "spearman_rho": 0.0,
+    "p_fdr": 0.15174900491712626
+   }
+  ]
+ }
+}

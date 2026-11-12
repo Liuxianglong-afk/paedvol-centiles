@@ -1,0 +1,10 @@
+{
+ "script": "scripts/A27_visual_qc_summary.py",
+ "source": "user report 2026-11-12: 50 randomly selected analysed scans visually inspected; no segmentation errors",
+ "n_inspected": 50,
+ "n_errors": 0,
+ "error_rate_95ci_clopper_pearson": [
+  0.0,
+  0.0711
+ ]
+}

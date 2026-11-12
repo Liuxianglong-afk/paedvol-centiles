@@ -1,0 +1,525 @@
+{
+ "generated": "2026-11-12T17:08:45",
+ "script": "scripts/A24_eb_site_adaptation.py",
+ "tau2_median_over_regions_all_sites": 0.13609309671003708,
+ "by_seed": {
+  "42": {
+   "k5_eb_shrinkage": {
+    "abs_bias": 0.2897,
+    "sd": 0.9254,
+    "cov90": 0.9045,
+    "cov95": 0.9507
+   },
+   "k5_none": {
+    "abs_bias": 0.3596,
+    "sd": 0.9254,
+    "cov90": 0.8909,
+    "cov95": 0.941
+   },
+   "k5_recentre": {
+    "abs_bias": 0.3751,
+    "sd": 0.9254,
+    "cov90": 0.8914,
+    "cov95": 0.9423
+   },
+   "k5_recentre_rescale": {
+    "abs_bias": 0.3751,
+    "sd": 0.9254,
+    "cov90": 0.8914,
+    "cov95": 0.9423
+   },
+   "k10_eb_shrinkage": {
+    "abs_bias": 0.2781,
+    "sd": 0.9139,
+    "cov90": 0.9116,
+    "cov95": 0.9549
+   },
+   "k10_none": {
+    "abs_bias": 0.3695,
+    "sd": 0.9139,
+    "cov90": 0.8944,
+    "cov95": 0.943
+   },
+   "k10_recentre": {
+    "abs_bias": 0.3097,
+    "sd": 0.9139,
+    "cov90": 0.9078,
+    "cov95": 0.953
+   },
+   "k10_recentre_rescale": {
+    "abs_bias": 0.3647,
+    "sd": 1.0774,
+    "cov90": 0.8487,
+    "cov95": 0.9051
+   },
+   "k20_eb_shrinkage": {
+    "abs_bias": 0.2351,
+    "sd": 0.9215,
+    "cov90": 0.9136,
+    "cov95": 0.957
+   },
+   "k20_none": {
+    "abs_bias": 0.3499,
+    "sd": 0.9215,
+    "cov90": 0.8951,
+    "cov95": 0.9445
+   },
+   "k20_recentre": {
+    "abs_bias": 0.2475,
+    "sd": 0.9215,
+    "cov90": 0.9125,
+    "cov95": 0.9563
+   },
+   "k20_recentre_rescale": {
+    "abs_bias": 0.2772,
+    "sd": 1.0256,
+    "cov90": 0.8764,
+    "cov95": 0.9287
+   },
+   "k40_eb_shrinkage": {
+    "abs_bias": 0.192,
+    "sd": 0.9526,
+    "cov90": 0.909,
+    "cov95": 0.9549
+   },
+   "k40_none": {
+    "abs_bias": 0.3312,
+    "sd": 0.9526,
+    "cov90": 0.8891,
+    "cov95": 0.9403
+   },
+   "k40_recentre": {
+    "abs_bias": 0.1972,
+    "sd": 0.9526,
+    "cov90": 0.9089,
+    "cov95": 0.9549
+   },
+   "k40_recentre_rescale": {
+    "abs_bias": 0.2082,
+    "sd": 1.0112,
+    "cov90": 0.8893,
+    "cov95": 0.9398
+   }
+  },
+  "7": {
+   "k5_eb_shrinkage": {
+    "abs_bias": 0.2923,
+    "sd": 0.9247,
+    "cov90": 0.9043,
+    "cov95": 0.9508
+   },
+   "k5_none": {
+    "abs_bias": 0.3607,
+    "sd": 0.9247,
+    "cov90": 0.8908,
+    "cov95": 0.941
+   },
+   "k5_recentre": {
+    "abs_bias": 0.3767,
+    "sd": 0.9247,
+    "cov90": 0.8914,
+    "cov95": 0.9423
+   },
+   "k5_recentre_rescale": {
+    "abs_bias": 0.3767,
+    "sd": 0.9247,
+    "cov90": 0.8914,
+    "cov95": 0.9423
+   },
+   "k10_eb_shrinkage": {
+    "abs_bias": 0.276,
+    "sd": 0.9138,
+    "cov90": 0.9116,
+    "cov95": 0.9551
+   },
+   "k10_none": {
+    "abs_bias": 0.3692,
+    "sd": 0.9138,
+    "cov90": 0.8943,
+    "cov95": 0.9431
+   },
+   "k10_recentre": {
+    "abs_bias": 0.3083,
+    "sd": 0.9138,
+    "cov90": 0.9078,
+    "cov95": 0.9529
+   },
+   "k10_recentre_rescale": {
+    "abs_bias": 0.3636,
+    "sd": 1.0784,
+    "cov90": 0.8483,
+    "cov95": 0.9046
+   },
+   "k20_eb_shrinkage": {
+    "abs_bias": 0.2303,
+    "sd": 0.9238,
+    "cov90": 0.9134,
+    "cov95": 0.9567
+   },
+   "k20_none": {
+    "abs_bias": 0.346,
+    "sd": 0.9238,
+    "cov90": 0.895,
+    "cov95": 0.9442
+   },
+   "k20_recentre": {
+    "abs_bias": 0.2437,
+    "sd": 0.9238,
+    "cov90": 0.9123,
+    "cov95": 0.9559
+   },
+   "k20_recentre_rescale": {
+    "abs_bias": 0.273,
+    "sd": 1.0273,
+    "cov90": 0.8769,
+    "cov95": 0.9289
+   },
+   "k40_eb_shrinkage": {
+    "abs_bias": 0.1928,
+    "sd": 0.9494,
+    "cov90": 0.91,
+    "cov95": 0.9556
+   },
+   "k40_none": {
+    "abs_bias": 0.3346,
+    "sd": 0.9494,
+    "cov90": 0.8896,
+    "cov95": 0.9408
+   },
+   "k40_recentre": {
+    "abs_bias": 0.1964,
+    "sd": 0.9494,
+    "cov90": 0.9102,
+    "cov95": 0.9557
+   },
+   "k40_recentre_rescale": {
+    "abs_bias": 0.2069,
+    "sd": 1.0063,
+    "cov90": 0.8911,
+    "cov95": 0.9409
+   }
+  },
+  "123": {
+   "k5_eb_shrinkage": {
+    "abs_bias": 0.2916,
+    "sd": 0.9254,
+    "cov90": 0.9043,
+    "cov95": 0.9507
+   },
+   "k5_none": {
+    "abs_bias": 0.3606,
+    "sd": 0.9254,
+    "cov90": 0.8908,
+    "cov95": 0.941
+   },
+   "k5_recentre": {
+    "abs_bias": 0.3754,
+    "sd": 0.9254,
+    "cov90": 0.8913,
+    "cov95": 0.9423
+   },
+   "k5_recentre_rescale": {
+    "abs_bias": 0.3754,
+    "sd": 0.9254,
+    "cov90": 0.8913,
+    "cov95": 0.9423
+   },
+   "k10_eb_shrinkage": {
+    "abs_bias": 0.2767,
+    "sd": 0.9131,
+    "cov90": 0.9118,
+    "cov95": 0.9552
+   },
+   "k10_none": {
+    "abs_bias": 0.3698,
+    "sd": 0.9131,
+    "cov90": 0.8946,
+    "cov95": 0.9433
+   },
+   "k10_recentre": {
+    "abs_bias": 0.3075,
+    "sd": 0.9131,
+    "cov90": 0.9082,
+    "cov95": 0.9531
+   },
+   "k10_recentre_rescale": {
+    "abs_bias": 0.361,
+    "sd": 1.0708,
+    "cov90": 0.8506,
+    "cov95": 0.9066
+   },
+   "k20_eb_shrinkage": {
+    "abs_bias": 0.2334,
+    "sd": 0.9218,
+    "cov90": 0.9139,
+    "cov95": 0.957
+   },
+   "k20_none": {
+    "abs_bias": 0.3475,
+    "sd": 0.9218,
+    "cov90": 0.8955,
+    "cov95": 0.9448
+   },
+   "k20_recentre": {
+    "abs_bias": 0.247,
+    "sd": 0.9218,
+    "cov90": 0.9128,
+    "cov95": 0.9562
+   },
+   "k20_recentre_rescale": {
+    "abs_bias": 0.2757,
+    "sd": 1.024,
+    "cov90": 0.8771,
+    "cov95": 0.9293
+   },
+   "k40_eb_shrinkage": {
+    "abs_bias": 0.1926,
+    "sd": 0.9512,
+    "cov90": 0.909,
+    "cov95": 0.955
+   },
+   "k40_none": {
+    "abs_bias": 0.3313,
+    "sd": 0.9512,
+    "cov90": 0.8891,
+    "cov95": 0.9404
+   },
+   "k40_recentre": {
+    "abs_bias": 0.1978,
+    "sd": 0.9512,
+    "cov90": 0.9093,
+    "cov95": 0.9552
+   },
+   "k40_recentre_rescale": {
+    "abs_bias": 0.2087,
+    "sd": 1.0087,
+    "cov90": 0.89,
+    "cov95": 0.9402
+   }
+  },
+  "2024": {
+   "k5_eb_shrinkage": {
+    "abs_bias": 0.2904,
+    "sd": 0.9251,
+    "cov90": 0.9046,
+    "cov95": 0.9509
+   },
+   "k5_none": {
+    "abs_bias": 0.3606,
+    "sd": 0.9251,
+    "cov90": 0.8909,
+    "cov95": 0.941
+   },
+   "k5_recentre": {
+    "abs_bias": 0.3729,
+    "sd": 0.9251,
+    "cov90": 0.8919,
+    "cov95": 0.9427
+   },
+   "k5_recentre_rescale": {
+    "abs_bias": 0.3729,
+    "sd": 0.9251,
+    "cov90": 0.8919,
+    "cov95": 0.9427
+   },
+   "k10_eb_shrinkage": {
+    "abs_bias": 0.2769,
+    "sd": 0.9121,
+    "cov90": 0.9122,
+    "cov95": 0.9554
+   },
+   "k10_none": {
+    "abs_bias": 0.3694,
+    "sd": 0.9121,
+    "cov90": 0.895,
+    "cov95": 0.9435
+   },
+   "k10_recentre": {
+    "abs_bias": 0.3081,
+    "sd": 0.9121,
+    "cov90": 0.9083,
+    "cov95": 0.9532
+   },
+   "k10_recentre_rescale": {
+    "abs_bias": 0.3623,
+    "sd": 1.0729,
+    "cov90": 0.8497,
+    "cov95": 0.906
+   },
+   "k20_eb_shrinkage": {
+    "abs_bias": 0.236,
+    "sd": 0.9167,
+    "cov90": 0.9148,
+    "cov95": 0.9579
+   },
+   "k20_none": {
+    "abs_bias": 0.3501,
+    "sd": 0.9167,
+    "cov90": 0.8961,
+    "cov95": 0.9451
+   },
+   "k20_recentre": {
+    "abs_bias": 0.2489,
+    "sd": 0.9167,
+    "cov90": 0.9142,
+    "cov95": 0.9572
+   },
+   "k20_recentre_rescale": {
+    "abs_bias": 0.2781,
+    "sd": 1.0182,
+    "cov90": 0.8788,
+    "cov95": 0.9304
+   },
+   "k40_eb_shrinkage": {
+    "abs_bias": 0.1929,
+    "sd": 0.9527,
+    "cov90": 0.9092,
+    "cov95": 0.955
+   },
+   "k40_none": {
+    "abs_bias": 0.3327,
+    "sd": 0.9527,
+    "cov90": 0.8889,
+    "cov95": 0.9401
+   },
+   "k40_recentre": {
+    "abs_bias": 0.197,
+    "sd": 0.9527,
+    "cov90": 0.9092,
+    "cov95": 0.9551
+   },
+   "k40_recentre_rescale": {
+    "abs_bias": 0.208,
+    "sd": 1.0111,
+    "cov90": 0.8898,
+    "cov95": 0.9398
+   }
+  }
+ },
+ "across_seeds": {
+  "k5_eb_shrinkage": {
+   "abs_bias_mean": 0.291,
+   "abs_bias_sd": 0.0012,
+   "cov90_mean": 0.9044,
+   "cov90_sd": 0.0002
+  },
+  "k5_none": {
+   "abs_bias_mean": 0.3604,
+   "abs_bias_sd": 0.0005,
+   "cov90_mean": 0.8909,
+   "cov90_sd": 0.0
+  },
+  "k5_recentre": {
+   "abs_bias_mean": 0.375,
+   "abs_bias_sd": 0.0016,
+   "cov90_mean": 0.8915,
+   "cov90_sd": 0.0003
+  },
+  "k5_recentre_rescale": {
+   "abs_bias_mean": 0.375,
+   "abs_bias_sd": 0.0016,
+   "cov90_mean": 0.8915,
+   "cov90_sd": 0.0003
+  },
+  "k10_eb_shrinkage": {
+   "abs_bias_mean": 0.277,
+   "abs_bias_sd": 0.0009,
+   "cov90_mean": 0.9118,
+   "cov90_sd": 0.0003
+  },
+  "k10_none": {
+   "abs_bias_mean": 0.3695,
+   "abs_bias_sd": 0.0002,
+   "cov90_mean": 0.8946,
+   "cov90_sd": 0.0003
+  },
+  "k10_recentre": {
+   "abs_bias_mean": 0.3084,
+   "abs_bias_sd": 0.0009,
+   "cov90_mean": 0.908,
+   "cov90_sd": 0.0002
+  },
+  "k10_recentre_rescale": {
+   "abs_bias_mean": 0.3629,
+   "abs_bias_sd": 0.0016,
+   "cov90_mean": 0.8493,
+   "cov90_sd": 0.001
+  },
+  "k20_eb_shrinkage": {
+   "abs_bias_mean": 0.2337,
+   "abs_bias_sd": 0.0025,
+   "cov90_mean": 0.9139,
+   "cov90_sd": 0.0006
+  },
+  "k20_none": {
+   "abs_bias_mean": 0.3484,
+   "abs_bias_sd": 0.0019,
+   "cov90_mean": 0.8954,
+   "cov90_sd": 0.0005
+  },
+  "k20_recentre": {
+   "abs_bias_mean": 0.2468,
+   "abs_bias_sd": 0.0022,
+   "cov90_mean": 0.9129,
+   "cov90_sd": 0.0008
+  },
+  "k20_recentre_rescale": {
+   "abs_bias_mean": 0.276,
+   "abs_bias_sd": 0.0022,
+   "cov90_mean": 0.8773,
+   "cov90_sd": 0.001
+  },
+  "k40_eb_shrinkage": {
+   "abs_bias_mean": 0.1926,
+   "abs_bias_sd": 0.0004,
+   "cov90_mean": 0.9093,
+   "cov90_sd": 0.0005
+  },
+  "k40_none": {
+   "abs_bias_mean": 0.3325,
+   "abs_bias_sd": 0.0016,
+   "cov90_mean": 0.8892,
+   "cov90_sd": 0.0003
+  },
+  "k40_recentre": {
+   "abs_bias_mean": 0.1971,
+   "abs_bias_sd": 0.0006,
+   "cov90_mean": 0.9094,
+   "cov90_sd": 0.0005
+  },
+  "k40_recentre_rescale": {
+   "abs_bias_mean": 0.2079,
+   "abs_bias_sd": 0.0008,
+   "cov90_mean": 0.89,
+   "cov90_sd": 0.0008
+  }
+ },
+ "eb_vs_recentre_site_level_seed42": {
+  "k5": {
+   "n_sites": 28,
+   "pct_sites_eb_smaller_offset": 89.3,
+   "median_diff_eb_minus_recentre": -0.1012
+  },
+  "k10": {
+   "n_sites": 26,
+   "pct_sites_eb_smaller_offset": 84.6,
+   "median_diff_eb_minus_recentre": -0.0385
+  },
+  "k20": {
+   "n_sites": 14,
+   "pct_sites_eb_smaller_offset": 85.7,
+   "median_diff_eb_minus_recentre": -0.0168
+  },
+  "k40": {
+   "n_sites": 8,
+   "pct_sites_eb_smaller_offset": 75.0,
+   "median_diff_eb_minus_recentre": -0.0078
+  }
+ },
+ "B_median_by_k": {
+  "k5": 0.438,
+  "k10": 0.609,
+  "k20": 0.757,
+  "k40": 0.862
+ }
+}

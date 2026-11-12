@@ -1,0 +1,50 @@
+{
+ "script": "scripts/A22_detectable_effects.py",
+ "alpha": 0.05,
+ "power": 0.8,
+ "regional_alpha_bonferroni": 0.0005434782608695652,
+ "comparisons": {
+  "ABIDE ASD vs controls": {
+   "n1": 664,
+   "n2": 397,
+   "d_min": 0.178,
+   "d_min_regional_bonferroni": 0.273
+  },
+  "HBN ASD vs controls": {
+   "n1": 394,
+   "n2": 131,
+   "d_min": 0.283,
+   "d_min_regional_bonferroni": 0.434
+  },
+  "HBN ADHD vs controls": {
+   "n1": 1611,
+   "n2": 131,
+   "d_min": 0.255,
+   "d_min_regional_bonferroni": 0.391
+  },
+  "HBN anxiety vs controls": {
+   "n1": 996,
+   "n2": 131,
+   "d_min": 0.26,
+   "d_min_regional_bonferroni": 0.4
+  },
+  "HBN SLD vs controls": {
+   "n1": 742,
+   "n2": 131,
+   "d_min": 0.266,
+   "d_min_regional_bonferroni": 0.408
+  },
+  "HBN depression vs controls": {
+   "n1": 299,
+   "n2": 131,
+   "d_min": 0.294,
+   "d_min_regional_bonferroni": 0.451
+  },
+  "HBN ASD vs ADHD without ASD": {
+   "n1": 394,
+   "n2": 1317,
+   "d_min": 0.161,
+   "d_min_regional_bonferroni": 0.247
+  }
+ }
+}

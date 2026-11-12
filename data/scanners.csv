@@ -1,0 +1,43 @@
+dataset,site,manufacturer,model,field_T,source
+ABIDE I,Caltech,Siemens,MAGNETOM TrioTim,3,ABIDE scan_params/Caltech/anat.pdf
+ABIDE I,CMU_a,Siemens,MAGNETOM Verio,3,ABIDE scan_params/CMU/anat.pdf
+ABIDE I,CMU_b,Siemens,MAGNETOM Verio,3,ABIDE scan_params/CMU/anat.pdf
+ABIDE I,KKI,Philips,Achieva,3,ABIDE I web page
+ABIDE I,Leuven_1,Philips,Intera,3,ABIDE scan_params/Leuven-1/anat.pdf
+ABIDE I,Leuven_2,Philips,Intera,3,ABIDE I web page (3.0 T Philips) + Leuven-1 pdf
+ABIDE I,MaxMun_a,Siemens,MAGNETOM Verio,3,ABIDE scan_params/MaxMun/anat.pdf
+ABIDE I,MaxMun_c,Siemens,MAGNETOM Verio,3,ABIDE scan_params/MaxMun/anat.pdf
+ABIDE I,MaxMun_d,Siemens,MAGNETOM Verio,3,ABIDE scan_params/MaxMun/anat.pdf
+ABIDE I,NYU,Siemens,MAGNETOM Allegra,3,ABIDE scan_params/NYU/anat.pdf
+ABIDE I,OHSU,Siemens,MAGNETOM TrioTim,3,ABIDE scan_params/OHSU/anat.pdf
+ABIDE I,Olin,Siemens,MAGNETOM Allegra,3,ABIDE scan_params/Olin/anat.pdf
+ABIDE I,Pitt,Siemens,MAGNETOM Allegra,3,ABIDE scan_params/Pitt/anat.pdf
+ABIDE I,SBL,Philips,Intera,3,ABIDE scan_params/SBL/anat.pdf
+ABIDE I,SDSU,GE,MR750,3,ABIDE I web page
+ABIDE I,Stanford,GE,Signa,3,ABIDE scan_params/Stanford/anat.pdf
+ABIDE I,Trinity,Philips,Achieva,3,ABIDE I web page
+ABIDE I,UCLA_1,Siemens,MAGNETOM TrioTim,3,ABIDE scan_params/UCLA1/anat.pdf
+ABIDE I,UCLA_2,Siemens,MAGNETOM TrioTim,3,ABIDE scan_params/UCLA2/anat.pdf
+ABIDE I,UM_1,GE,Signa,3,ABIDE I web page
+ABIDE I,UM_2,GE,Signa,3,ABIDE I web page
+ABIDE I,USM,Siemens,MAGNETOM TrioTim,3,ABIDE scan_params/USM/anat.pdf
+ABIDE I,Yale,Siemens,MAGNETOM TrioTim,3,ABIDE scan_params/Yale/anat.pdf
+ABIDE II,ABIDEII-BNI_1,Philips,Ingenia,3,ABIDE II scantable pdf
+ABIDE II,ABIDEII-EMC_1,GE,Discovery MR750,3,ABIDE II web page
+ABIDE II,ABIDEII-GU_1,Siemens,Trio,3,ABIDE II web page
+ABIDE II,ABIDEII-IP_1,Philips,Achieva,1.5,ABIDE II scantable pdf
+ABIDE II,ABIDEII-IU_1,Siemens,TrioTim,3,ABIDE II scantable pdf
+ABIDE II,ABIDEII-KKI_1,Philips,Achieva,3,ABIDE II web page
+ABIDE II,ABIDEII-KUL_3,Philips,Achieva dStream,3,ABIDE II scantable pdf
+ABIDE II,ABIDEII-NYU_1,Siemens,Allegra,3,ABIDE II web page
+ABIDE II,ABIDEII-NYU_2,Siemens,Allegra,3,ABIDE II web page
+ABIDE II,ABIDEII-OHSU_1,Siemens,TIM Trio,3,ABIDE II web page
+ABIDE II,ABIDEII-ONRC_2,Siemens,MAGNETOM Skyra,3,ABIDE II anat.pdf (model; Skyra is a 3 T system)
+ABIDE II,ABIDEII-SDSU_1,GE,MR750,3,ABIDE II web page
+ABIDE II,ABIDEII-TCD_1,Philips,Intera Achieva,3,ABIDE II web page
+ABIDE II,ABIDEII-UCD_1,Siemens,TIM Trio,3,ABIDE II web page
+ABIDE II,ABIDEII-USM_1,Siemens,TrioTim,3,ABIDE II scantable pdf
+HBN,HBN-CBIC,Siemens,Prisma fit,3,BIDS T1w json sidecars (FCP-INDI S3; scripts/A19)
+HBN,HBN-CUNY,Siemens,Prisma,3,BIDS T1w json sidecars (FCP-INDI S3; scripts/A19)
+HBN,HBN-RU,Siemens,TrioTim,3,BIDS T1w json sidecars (FCP-INDI S3; scripts/A19)
+HBN,HBN-SI,Siemens,Avanto,1.5,BIDS T1w json sidecars (FCP-INDI S3; scripts/A19)

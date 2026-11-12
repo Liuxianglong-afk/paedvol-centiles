@@ -1,0 +1,381 @@
+{
+  "generated": "2026-10-19T05:23:44",
+  "script": "scripts/A03_norm_validation_and_asd.py",
+  "families": {
+    "BCCGo": 70,
+    "SHASHo": 14,
+    "BCTo": 8
+  },
+  "loso": {
+    "pooled": {
+      "mean": -0.010183312137689129,
+      "sd": 1.0306429348467578,
+      "cov90": 0.8914215048164541,
+      "cov95": 0.9414084873730799
+    },
+    "regions_sd_within_0.9_1.1": 92,
+    "n_regions": 92,
+    "region_sd_median_iqr": [
+      1.028135194603637,
+      1.0181868986951872,
+      1.0405993227141748
+    ],
+    "region_cov90_median_iqr": [
+      0.8910179640718563,
+      0.8862275449101796,
+      0.895808383233533
+    ],
+    "site_offset_abs_mean_median": 0.37812754531540255,
+    "n_sites": 35,
+    "n_subjects": 835
+  },
+  "adaptation_seed42": {
+    "k5_adapted": {
+      "abs_bias": 0.3728,
+      "sd": 0.9126,
+      "cov90": 0.8954,
+      "cov95": 0.9449
+    },
+    "k5_none": {
+      "abs_bias": 0.3898,
+      "sd": 0.9126,
+      "cov90": 0.8886,
+      "cov95": 0.9396
+    },
+    "k5_shift_only": {
+      "abs_bias": 0.3728,
+      "sd": 0.9126,
+      "cov90": 0.8954,
+      "cov95": 0.9449
+    },
+    "k10_adapted": {
+      "abs_bias": 0.3683,
+      "sd": 1.0723,
+      "cov90": 0.8497,
+      "cov95": 0.906
+    },
+    "k10_none": {
+      "abs_bias": 0.4008,
+      "sd": 0.899,
+      "cov90": 0.8923,
+      "cov95": 0.9414
+    },
+    "k10_shift_only": {
+      "abs_bias": 0.3091,
+      "sd": 0.899,
+      "cov90": 0.912,
+      "cov95": 0.9554
+    },
+    "k20_adapted": {
+      "abs_bias": 0.276,
+      "sd": 1.0217,
+      "cov90": 0.8781,
+      "cov95": 0.9299
+    },
+    "k20_none": {
+      "abs_bias": 0.3859,
+      "sd": 0.9184,
+      "cov90": 0.8894,
+      "cov95": 0.9401
+    },
+    "k20_shift_only": {
+      "abs_bias": 0.2472,
+      "sd": 0.9184,
+      "cov90": 0.9133,
+      "cov95": 0.9571
+    },
+    "k40_adapted": {
+      "abs_bias": 0.2191,
+      "sd": 1.0023,
+      "cov90": 0.8914,
+      "cov95": 0.9418
+    },
+    "k40_none": {
+      "abs_bias": 0.4026,
+      "sd": 0.9408,
+      "cov90": 0.8806,
+      "cov95": 0.9338
+    },
+    "k40_shift_only": {
+      "abs_bias": 0.2066,
+      "sd": 0.9408,
+      "cov90": 0.9119,
+      "cov95": 0.9566
+    }
+  },
+  "adaptation_n_sites": {
+    "5": 24,
+    "10": 22,
+    "20": 9,
+    "40": 5
+  },
+  "adaptation_cov90_across_seeds": {
+    "k5_adapted": [
+      0.8952,
+      0.0003
+    ],
+    "k5_none": [
+      0.8886,
+      0.0001
+    ],
+    "k5_shift_only": [
+      0.8952,
+      0.0003
+    ],
+    "k10_adapted": [
+      0.8488,
+      0.0013
+    ],
+    "k10_none": [
+      0.8924,
+      0.0001
+    ],
+    "k10_shift_only": [
+      0.9117,
+      0.0005
+    ],
+    "k20_adapted": [
+      0.8767,
+      0.002
+    ],
+    "k20_none": [
+      0.888,
+      0.0013
+    ],
+    "k20_shift_only": [
+      0.9125,
+      0.0008
+    ],
+    "k40_adapted": [
+      0.8906,
+      0.0024
+    ],
+    "k40_none": [
+      0.8802,
+      0.0019
+    ],
+    "k40_shift_only": [
+      0.9111,
+      0.0015
+    ]
+  },
+  "asd": {
+    "n_TC_test": 394,
+    "n_ASD": 647,
+    "excluded_sites_no_local_controls": [
+      {
+        "site": "ABIDEII-BNI_1",
+        "n_train_tc": 4,
+        "n_subjects": 15
+      },
+      {
+        "site": "ABIDEII-IU_1",
+        "n_train_tc": 2,
+        "n_subjects": 9
+      },
+      {
+        "site": "ABIDEII-KUL_3",
+        "n_train_tc": 0,
+        "n_subjects": 11
+      },
+      {
+        "site": "ABIDEII-NYU_2",
+        "n_train_tc": 0,
+        "n_subjects": 11
+      },
+      {
+        "site": "ABIDEII-ONRC_2",
+        "n_train_tc": 1,
+        "n_subjects": 2
+      },
+      {
+        "site": "ABIDEII-USM_1",
+        "n_train_tc": 3,
+        "n_subjects": 18
+      },
+      {
+        "site": "CMU_a",
+        "n_train_tc": 1,
+        "n_subjects": 3
+      },
+      {
+        "site": "CMU_b",
+        "n_train_tc": 1,
+        "n_subjects": 5
+      },
+      {
+        "site": "Caltech",
+        "n_train_tc": 3,
+        "n_subjects": 13
+      },
+      {
+        "site": "Leuven_1",
+        "n_train_tc": 2,
+        "n_subjects": 11
+      },
+      {
+        "site": "MaxMun_a",
+        "n_train_tc": 1,
+        "n_subjects": 2
+      },
+      {
+        "site": "MaxMun_c",
+        "n_train_tc": 0,
+        "n_subjects": 1
+      },
+      {
+        "site": "MaxMun_d",
+        "n_train_tc": 3,
+        "n_subjects": 14
+      },
+      {
+        "site": "SBL",
+        "n_train_tc": 1,
+        "n_subjects": 1
+      }
+    ],
+    "burden": {
+      "TC_median_iqr": [
+        4.0,
+        2.0,
+        9.0
+      ],
+      "ASD_median_iqr": [
+        5.0,
+        2.0,
+        10.0
+      ],
+      "TC_any_extreme_pct": 90.60913705583756,
+      "ASD_any_extreme_pct": 93.35394126738794,
+      "IRR": 1.243176129797547,
+      "IRR_95ci": [
+        1.0864444937213236,
+        1.422518038086564
+      ],
+      "p": 0.0015464082193732567
+    },
+    "regional": {
+      "n_fdr_sig": 4,
+      "top10": [
+        {
+          "region": "V_3rd_Ventricle",
+          "cohen_d": 0.3012,
+          "beta": 0.3466,
+          "p_fdr": 0.0007,
+          "ASD_pct_pos_extreme": 8.6553,
+          "ASD_pct_neg_extreme": 2.0093
+        },
+        {
+          "region": "G_LateralVentricles",
+          "cohen_d": 0.2389,
+          "beta": 0.2655,
+          "p_fdr": 0.0106,
+          "ASD_pct_pos_extreme": 7.728,
+          "ASD_pct_neg_extreme": 1.7002
+        },
+        {
+          "region": "C_rh_pericalcarine",
+          "cohen_d": -0.1882,
+          "beta": -0.2316,
+          "p_fdr": 0.0387,
+          "ASD_pct_pos_extreme": 2.6275,
+          "ASD_pct_neg_extreme": 4.7913
+        },
+        {
+          "region": "C_lh_entorhinal",
+          "cohen_d": -0.2124,
+          "beta": -0.231,
+          "p_fdr": 0.0387,
+          "ASD_pct_pos_extreme": 3.5549,
+          "ASD_pct_neg_extreme": 7.2643
+        },
+        {
+          "region": "C_lh_pericalcarine",
+          "cohen_d": -0.1616,
+          "beta": -0.2119,
+          "p_fdr": 0.1021,
+          "ASD_pct_pos_extreme": 2.1638,
+          "ASD_pct_neg_extreme": 6.3369
+        },
+        {
+          "region": "C_rh_rostralanteriorcingulate",
+          "cohen_d": -0.1391,
+          "beta": -0.1665,
+          "p_fdr": 0.2913,
+          "ASD_pct_pos_extreme": 3.4003,
+          "ASD_pct_neg_extreme": 6.1824
+        },
+        {
+          "region": "C_rh_entorhinal",
+          "cohen_d": -0.1455,
+          "beta": -0.1645,
+          "p_fdr": 0.2913,
+          "ASD_pct_pos_extreme": 4.0185,
+          "ASD_pct_neg_extreme": 6.6461
+        },
+        {
+          "region": "C_rh_precuneus",
+          "cohen_d": 0.1553,
+          "beta": 0.1575,
+          "p_fdr": 0.3963,
+          "ASD_pct_pos_extreme": 6.8006,
+          "ASD_pct_neg_extreme": 2.7821
+        },
+        {
+          "region": "C_rh_transversetemporal",
+          "cohen_d": 0.0986,
+          "beta": 0.1261,
+          "p_fdr": 0.6234,
+          "ASD_pct_pos_extreme": 5.1005,
+          "ASD_pct_neg_extreme": 2.7821
+        },
+        {
+          "region": "C_lh_precuneus",
+          "cohen_d": 0.1387,
+          "beta": 0.128,
+          "p_fdr": 0.6234,
+          "ASD_pct_pos_extreme": 5.8733,
+          "ASD_pct_neg_extreme": 3.2457
+        }
+      ],
+      "max_ASD_pct_extreme_any_region": 14.528593508500773
+    },
+    "discrimination_z_features": {
+      "auc": 0.591,
+      "auc_95ci": [
+        0.557,
+        0.626
+      ],
+      "brier": 0.2315,
+      "calibration_intercept": -0.01,
+      "calibration_slope": 0.696,
+      "per_institution_auc": {
+        "EMC": 0.614,
+        "GU": 0.711,
+        "IP": 0.774,
+        "KKI": 0.676,
+        "Leuven": 0.76,
+        "NYU": 0.528,
+        "OHSU": 0.496,
+        "Olin": 0.611,
+        "Pitt": 0.567,
+        "SDSU": 0.579,
+        "Stanford": 0.608,
+        "TCD": 0.573,
+        "UCD": 0.848,
+        "UCLA": 0.526,
+        "UM": 0.692,
+        "USM": 0.616,
+        "Yale": 0.671
+      },
+      "per_institution_auc_median": 0.614
+    },
+    "discrimination_burden_only": {
+      "auc": 0.549,
+      "auc_95ci": [
+        0.513,
+        0.586
+      ]
+    }
+  }
+}
